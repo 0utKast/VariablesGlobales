@@ -1,23 +1,23 @@
 #include <iostream>
 
 // Las variables globales declaradas fuera de una función son variables globales
-int v_g{}; // variable global v_g
+int g_v{}; // variable global v_g
 
 void hacerAlgo()
 {
     // variables globales pueden ser vistas y usadas en cualquier parte del archivo
-    v_g = 3;
-    std::cout << v_g << '\n';
+    g_v = 3;
+    std::cout << g_v << '\n';
 }
 
 int main()
 {
     hacerAlgo();
-    std::cout << v_g << '\n';
+    std::cout << g_v << '\n';
 
     // variables globales pueden ser vistas y usadas en cualquier parte del archivo
-    v_g = 5;
-    std::cout << v_g << '\n';
+    g_v = 5;
+    std::cout << g_v << '\n';
 
     return 0;
 }
