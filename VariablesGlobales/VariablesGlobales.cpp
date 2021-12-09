@@ -1,5 +1,10 @@
 #include <iostream>
 
+// inicializaciones variables globales
+int g_x; // sin inicializados explícito ( inicializada a cero de modo predeterminado)
+int g_y{}; // inicializada a cero
+int g_z{ 1 }; // inicializada con un valor
+
 // Las variables globales declaradas fuera de una función son variables globales
 int g_v{}; // variable global v_g
 
