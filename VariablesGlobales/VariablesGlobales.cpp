@@ -1,4 +1,37 @@
-#include <iostream>
+
+//resumen rápido de variables globales
+// variables globales no constantes
+int g_x;                 // define variable global no inicializada (inicializada a cero de modo predeterminado)
+int g_x{};              // define variable global explícitamente inicializada a cero
+int g_x{ 1 };           // define variable global inicializada explícitamente
+
+// Variables globales const
+const int g_y;           // error: variables const deben inicializarse
+const int g_y{ 2 };     // define variable global constante inicializada
+
+// Constexpr global variables
+constexpr int g_y;       // error: variables constexpr deben inicializarse
+constexpr int g_y{ 3 }; // define variable global constexpr inicializada
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#include <iostream>
 
 //const int g_x; // error: variables constantes deben ser inicializadas
 //constexpr int g_w; // error: variables constexpr deben ser inicializadas
@@ -23,7 +56,7 @@ int main()
 
     return 0;
 }
-// g_y y g_z  salen de alcance aquí
+// g_y y g_z  salen de alcance aquí*/
 
 
 
