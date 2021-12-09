@@ -1,7 +1,7 @@
 #include <iostream>
 
-const int g_x; // error: variables constantes deben ser inicializadas
-constexpr int g_w; // error: variables constexpr deben ser inicializadas
+//const int g_x; // error: variables constantes deben ser inicializadas
+//constexpr int g_w; // error: variables constexpr deben ser inicializadas
 
 const int g_y{ 1 };  // variable global const g_y, inicializada con un valor
 constexpr int g_z{ 2 }; // variable global constexpr g_z, inicializada con un valor
